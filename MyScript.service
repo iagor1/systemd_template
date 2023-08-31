@@ -1,0 +1,10 @@
+[Unit]
+Description= Do something
+Wants=myMonitor.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/teste.sh
+
+[Install]
+WantedBy=multi-user.target

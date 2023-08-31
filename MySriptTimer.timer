@@ -1,0 +1,11 @@
+[Unit]
+Description= descrição
+Requires=myMonitor.service
+
+[Timer]
+Unit=myMonitor.service
+OnCalendar=*-*-* 12:00:00
+AccuracySec=1us
+
+[Install]
+WantedBy=timers.target
