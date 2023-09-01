@@ -4,6 +4,8 @@
 the machine only need to be up
 - systemd can have service or both (service and timer)
 - the service will point to the file you want to execute, the timer will set the time you want to execute
+## What is systemd ?
+- Basicaly it is a single daemon that performs complete process management, from startup to shutdown. They manage tasks and timers, systemd uses services to execute a task and timers to schedule the executions, this resource is very powerfull, you can customize to perfom a task on boot per example.
 ## Before creating
 - first of all systemds are located in the path in linux
 
@@ -32,7 +34,7 @@ Some information is very important like the line loaded, Active, Trigger, Trigge
 
 ## Creating a systemd
 
-1 - enter the indicated path where the systemd are <br>
+1 - enter the indicated path as root where the systemd are (/etc/systemd/system) <br>
 2 - create a file with the name of your service and suffix (extension) .service <br>
 3 - create a file with the name of your timer and suffix (extension) .timer<br>
 ## Activating the timer and service
