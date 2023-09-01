@@ -37,7 +37,9 @@ Some information is very important like the line loaded, Active, Trigger, Trigge
 1 - enter the indicated path as root where the systemd are (/etc/systemd/system) <br>
 2 - create a file with the name of your service and suffix (extension) .service <br>
 3 - create a file with the name of your timer and suffix (extension) .timer<br>
+4 - copy my example and change to your needs
 ## Activating the timer and service
+*need root privilage*
 1 - enable the timer with the command
 ```
 systemctl enable MyScriptTimer.timer
